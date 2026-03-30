@@ -1,0 +1,10 @@
+[dotenv@17.3.1] injecting env (6) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+Connected to Supabase ✅
+Zensure API running on port 3000
+Trigger engine started
+Redis unavailable, continuing in DB-only mode: connection refused
+Auth: registered worker JINGALALA
+Auth: OTP issued for 1234567877 -> 715138
+Auth: OTP verified for 1234567877
+Policies: activated standard for worker 4b9e0899-1f98-4c60-a37b-acfdf429866f
+Trigger engine: checking zones...

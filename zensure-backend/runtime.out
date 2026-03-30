@@ -1,0 +1,20 @@
+[dotenv@17.3.1] injecting env (6) from .env -- tip: ⚙️  override existing env vars with { override: true }
+Connected to Supabase ✅
+Zensure API running on port 3000
+Trigger engine started
+Redis unavailable, continuing in DB-only mode: connection refused
+Auth: registered worker JINGALALAHUHU
+Auth: OTP issued for 8146883307 -> 467035
+Auth: OTP verified for 8146883307
+Auth: registered worker SWG-2847-CHN
+Policies: activated basic for worker 7df6bc32-383e-4bf0-9aa6-0591a35de39e
+Trigger engine: checking zones...
+Auth: registered worker SRR
+Auth: OTP issued for 1234567893 -> 827469
+Auth: OTP verified for 1234567893
+Workers: updated profile 09888b3a-4acc-4f5f-a2dd-1553762772c7
+Trigger engine: checking zones...
+Trigger engine: checking zones...
+Trigger engine: checking zones...
+Disruptions: simulated heavy_rain for Mumbai/Dadar
+Trigger engine: checking zones...
