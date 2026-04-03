@@ -4,18 +4,23 @@ import { format } from 'date-fns';
 
 type Props = {
   title: string;
-  lastUpdatedSeconds: number;
+  lastRefreshedAt: number;
 };
 
-export default function TopBar({ title, lastUpdatedSeconds }: Props) {
-  const [now, setNow] = useState(new Date());
+export default function TopBar({ title, lastRefreshedAt }: Props) {
+  const [nowMs, setNowMs] = useState(() => Date.now());
 
   useEffect(() => {
-    const interval = window.setInterval(() => setNow(new Date()), 1000);
+    const interval = window.setInterval(() => {
+      setNowMs(Date.now());
+    }, 1000);
+
     return () => window.clearInterval(interval);
   }, []);
 
-  const clock = useMemo(() => format(now, 'dd MMM yyyy  HH:mm:ss'), [now]);
+  const elapsedSeconds = Math.max(0, Math.floor((nowMs - lastRefreshedAt) / 1000));
+
+  const clock = useMemo(() => format(new Date(nowMs), 'dd MMM yyyy  HH:mm:ss'), [nowMs]);
 
   return (
     <header
@@ -73,7 +78,7 @@ export default function TopBar({ title, lastUpdatedSeconds }: Props) {
             {clock}
           </div>
           <div style={{ fontSize: 12, color: 'var(--text-secondary)', marginTop: 2 }}>
-            Updated {lastUpdatedSeconds}s ago
+            Updated {elapsedSeconds}s ago
           </div>
         </div>
 

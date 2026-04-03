@@ -1,0 +1,13 @@
+env: load .env.local
+env: export EXPO_PUBLIC_BLINK_PROJECT_ID EXPO_PUBLIC_BLINK_PUBLISHABLE_KEY
+Starting project at C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main
+Starting Metro Bundler
+Waiting on http://localhost:8081
+Logs for your project will appear below.
+Web node_modules\expo-router\entry.js ▓▓▓▓░░░░░░░░░░░░ 28.2% (207/390)
+Web node_modules\expo-router\entry.js ▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░ 91.8% (777/830)
+Web Bundled 6800ms node_modules\expo-router\entry.js (909 modules)
+ LOG  [web] Logs will appear in the browser console
+Web node_modules\expo-router\entry.js ░░░░░░░░░░░░░░░░  0.0% (0/1)
+Web Bundled 214ms node_modules\expo-router\entry.js (1 module)
+ LOG  [web] Logs will appear in the browser console

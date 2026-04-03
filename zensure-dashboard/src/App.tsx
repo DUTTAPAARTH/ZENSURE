@@ -22,22 +22,17 @@ const queryClient = new QueryClient();
 function AppLayout() {
   const location = useLocation();
   const [refreshSignal, setRefreshSignal] = useState(0);
-  const [lastUpdatedSeconds, setLastUpdatedSeconds] = useState(0);
+  const [lastRefreshedAt, setLastRefreshedAt] = useState(() => Date.now());
   const [toasts, setToasts] = useState<ToastMessage[]>([]);
 
   useEffect(() => {
     const refreshInterval = window.setInterval(() => {
       setRefreshSignal(value => value + 1);
-      setLastUpdatedSeconds(0);
+      setLastRefreshedAt(Date.now());
     }, 30000);
-
-    const counterInterval = window.setInterval(() => {
-      setLastUpdatedSeconds(value => value + 1);
-    }, 1000);
 
     return () => {
       window.clearInterval(refreshInterval);
-      window.clearInterval(counterInterval);
     };
   }, []);
 
@@ -54,7 +49,7 @@ function AppLayout() {
   };
 
   const handleDataRefresh = () => {
-    setLastUpdatedSeconds(0);
+    setLastRefreshedAt(Date.now());
   };
 
   const title = useMemo(() => pageTitles[location.pathname] || 'Overview', [location.pathname]);
@@ -63,7 +58,7 @@ function AppLayout() {
     <div className="dashboard-shell">
       <Sidebar />
       <div className="dashboard-main">
-        <TopBar title={title} lastUpdatedSeconds={lastUpdatedSeconds} />
+        <TopBar title={title} lastRefreshedAt={lastRefreshedAt} />
         <div className="dashboard-page">
           <Routes>
             <Route path="/" element={<Overview refreshSignal={refreshSignal} onDataRefresh={handleDataRefresh} pushToast={pushToast} />} />

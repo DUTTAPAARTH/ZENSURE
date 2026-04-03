@@ -1,0 +1,65 @@
+Error: Could not find MIME for Buffer <null>
+    at Jimp.parseBitmap (C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:125518)
+    at Jimp.parseBitmap (C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:8514)
+    at C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:7613
+    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read/context:68:3)
+Error: Could not find MIME for Buffer <null>
+    at Jimp.parseBitmap (C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:125518)
+    at Jimp.parseBitmap (C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:8514)
+    at C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:7613
+    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read/context:68:3)
+Error: Could not find MIME for Buffer <null>
+    at Jimp.parseBitmap (C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:125518)
+    at Jimp.parseBitmap (C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:8514)
+    at C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:7613
+    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read/context:68:3)
+Error: Could not find MIME for Buffer <null>
+    at Jimp.parseBitmap (C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:125518)
+    at Jimp.parseBitmap (C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:8514)
+    at C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:7613
+    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read/context:68:3)
+Error: Could not find MIME for Buffer <null>
+    at Jimp.parseBitmap (C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:125518)
+    at Jimp.parseBitmap (C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:8514)
+    at C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:7613
+    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read/context:68:3)
+Error: Could not find MIME for Buffer <null>
+    at Jimp.parseBitmap (C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:125518)
+    at Jimp.parseBitmap (C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:8514)
+    at C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:7613
+    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read/context:68:3)
+Error: Could not find MIME for Buffer <null>
+    at Jimp.parseBitmap (C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:125518)
+    at Jimp.parseBitmap (C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:8514)
+    at C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:7613
+    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read/context:68:3)
+Error: Could not find MIME for Buffer <null>
+    at Jimp.parseBitmap (C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:125518)
+    at Jimp.parseBitmap (C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:8514)
+    at C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:7613
+    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read/context:68:3)
+Error: Could not find MIME for Buffer <null>
+    at Jimp.parseBitmap (C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:125518)
+    at Jimp.parseBitmap (C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:8514)
+    at C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:7613
+    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read/context:68:3)
+Error: Could not find MIME for Buffer <null>
+    at Jimp.parseBitmap (C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:125518)
+    at Jimp.parseBitmap (C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:8514)
+    at C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:7613
+    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read/context:68:3)
+Error: Could not find MIME for Buffer <null>
+    at Jimp.parseBitmap (C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:125518)
+    at Jimp.parseBitmap (C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:8514)
+    at C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:7613
+    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read/context:68:3)
+Error: Could not find MIME for Buffer <null>
+    at Jimp.parseBitmap (C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:125518)
+    at Jimp.parseBitmap (C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:8514)
+    at C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:7613
+    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read/context:68:3)
+Error: Could not find MIME for Buffer <null>
+    at Jimp.parseBitmap (C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:125518)
+    at Jimp.parseBitmap (C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:8514)
+    at C:\Users\PAARTH DUTTA\Downloads\ZENSURE\main\node_modules\jimp-compact\dist\jimp.js:1:7613
+    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read/context:68:3)
