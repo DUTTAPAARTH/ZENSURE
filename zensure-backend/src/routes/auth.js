@@ -146,14 +146,19 @@ router.post('/otp/verify', async (req, res, next) => {
       });
     }
 
-    console.log(`Auth verification: mobile=${mobile}, received=${otp}, stored=${otpRecord.otp} (type: ${typeof otpRecord.otp})`);
+    const receivedOtp = String(otp).trim();
+    const storedOtp = String(otpRecord.otp).trim();
+
+    console.log(`Auth verification: mobile=${mobile}, received="${receivedOtp}", stored="${storedOtp}"`);
     
-    if (String(otp) !== String(otpRecord.otp)) {
+    if (receivedOtp !== storedOtp) {
+      console.error(`OTP mismatch for ${mobile}: received ${receivedOtp} vs stored ${storedOtp}`);
       return res.status(400).json({
         success: false,
         error: 'Invalid OTP',
       });
     }
+
 
     const now = new Date();
     const expiry = new Date(otpRecord.expires_at);

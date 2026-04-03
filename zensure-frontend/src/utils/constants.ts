@@ -2,7 +2,9 @@ const envApiBaseUrl = process.env.EXPO_PUBLIC_API_BASE_URL;
 const webHostname = typeof window !== 'undefined' ? window.location.hostname : null;
 const defaultApiHost = webHostname || '192.168.1.25';
 
-export const API_BASE_URL = envApiBaseUrl || 'https://zensure-a2gu.onrender.com';
+export const API_BASE_URL = 'https://jubilant-charm-production-f9ec.up.railway.app';
+
+
 
 export const ZENSURE_COLORS = {
   bg: '#0D0D0D',

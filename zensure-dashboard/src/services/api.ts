@@ -8,7 +8,7 @@ import {
 } from '../types';
 
 const api = axios.create({
-  baseURL: 'https://zensure-a2gu.onrender.com',
+  baseURL: 'https://jubilant-charm-production-f9ec.up.railway.app',
   headers: {
     'Content-Type': 'application/json',
   },

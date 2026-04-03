@@ -17,7 +17,7 @@ export default function Sidebar() {
 
     const checkApi = async () => {
       try {
-        const response = await fetch('https://zensure-a2gu.onrender.com/health');
+        const response = await fetch('https://jubilant-charm-production-f9ec.up.railway.app/health');
         if (mounted) {
           setApiConnected(response.ok);
         }
