@@ -1,6 +1,9 @@
 {
   "name": "zensure-backend",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=18"
+  },
   "description": "Backend API for Zensure parametric income insurance platform",
   "main": "index.js",
   "scripts": {

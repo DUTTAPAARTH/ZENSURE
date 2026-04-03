@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: zensure-backend
+    runtime: node
+    plan: free # Can be changed to starter, standard, etc.
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: SUPABASE_URL
+        sync: false # Set in Render Dashboard
+      - key: SUPABASE_ANON_KEY
+        sync: false # Set in Render Dashboard
+      - key: SUPABASE_DB_URL
+        sync: false # Set in Render Dashboard
+      - key: JWT_SECRET
+        sync: false # Set in Render Dashboard
+      - key: REDIS_URL
+        sync: false # Optional, if you decide to use Redis on Render
