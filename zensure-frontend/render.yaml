@@ -1,0 +1,17 @@
+services:
+  - type: static
+    name: zensure-worker-app
+    runtime: static
+    buildCommand: npm install && npm run build:web
+    publishDir: dist
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: no-cache
+    envVars:
+      - key: EXPO_PUBLIC_API_BASE_URL
+        value: https://zensure-a2gu.onrender.com
+      - key: EXPO_PUBLIC_BLINK_PROJECT_ID
+        sync: false # Set in Render Dashboard from .env.local
+      - key: EXPO_PUBLIC_BLINK_PUBLISHABLE_KEY
+        sync: false # Set in Render Dashboard from .env.local
