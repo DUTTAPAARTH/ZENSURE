@@ -10,6 +10,7 @@ const disruptionRoutes = require('./src/routes/disruptions');
 const insurerRoutes = require('./src/routes/insurer');
 const errorHandler = require('./src/middleware/errorHandler');
 const { startTriggerEngine } = require('./src/services/triggerEngine');
+const redisClient = require('./src/db/redis');
 
 const app = express();
 const PORT = Number(process.env.PORT) || 3000;
