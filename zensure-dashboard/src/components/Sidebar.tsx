@@ -17,7 +17,7 @@ export default function Sidebar() {
 
     const checkApi = async () => {
       try {
-        const response = await fetch('http://localhost:3000/health');
+        const response = await fetch('https://zensure-a2gu.onrender.com/health');
         if (mounted) {
           setApiConnected(response.ok);
         }

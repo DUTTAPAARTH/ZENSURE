@@ -146,14 +146,19 @@ router.post('/otp/verify', async (req, res, next) => {
       });
     }
 
-    if (otp !== otpRecord.otp) {
+    console.log(`Auth verification: mobile=${mobile}, received=${otp}, stored=${otpRecord.otp} (type: ${typeof otpRecord.otp})`);
+    
+    if (String(otp) !== String(otpRecord.otp)) {
       return res.status(400).json({
         success: false,
         error: 'Invalid OTP',
       });
     }
 
-    if (new Date(otpRecord.expires_at) < new Date()) {
+    const now = new Date();
+    const expiry = new Date(otpRecord.expires_at);
+    
+    if (expiry < now) {
       await supabase.from('otp_store').delete().eq('mobile', mobile);
       return res.status(400).json({
         success: false,

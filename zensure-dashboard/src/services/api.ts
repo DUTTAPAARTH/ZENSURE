@@ -8,8 +8,10 @@ import {
 } from '../types';
 
 const api = axios.create({
-  baseURL: 'http://localhost:3000',
-  timeout: 10000,
+  baseURL: 'https://zensure-a2gu.onrender.com',
+  headers: {
+    'Content-Type': 'application/json',
+  },
 });
 
 api.interceptors.response.use(response => {
