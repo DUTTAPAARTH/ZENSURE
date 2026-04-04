@@ -4,18 +4,7 @@ const supabase = require('../db/supabase');
 
 const router = express.Router();
 
-function formatLocalTimestamp(date) {
-  const pad = value => String(value).padStart(2, '0');
-  return [
-    date.getFullYear(),
-    pad(date.getMonth() + 1),
-    pad(date.getDate()),
-  ].join('-') + ' ' + [
-    pad(date.getHours()),
-    pad(date.getMinutes()),
-    pad(date.getSeconds()),
-  ].join(':');
-}
+// Timestamps will now be handled via native .toISOString() to avoid DB drift
 
 router.post('/register', async (req, res, next) => {
   try {
@@ -94,8 +83,8 @@ router.post('/otp/send', async (req, res, next) => {
       {
         mobile,
         otp,
-        expires_at: formatLocalTimestamp(expiresAt),
-        created_at: formatLocalTimestamp(new Date()),
+        expires_at: expiresAt.toISOString(),
+        created_at: new Date().toISOString(),
       },
       { onConflict: 'mobile' }
     );

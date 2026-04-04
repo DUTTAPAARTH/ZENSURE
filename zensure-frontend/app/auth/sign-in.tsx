@@ -56,8 +56,9 @@ export default function SignInScreen() {
       await saveToken(response.data.token);
       await saveWorker(response.data.worker);
       router.replace('/(tabs)');
-    } catch {
-      setError('Invalid OTP. Try again.');
+    } catch (err: any) {
+      const serverErr = err.response?.data?.error;
+      setError(serverErr || 'Invalid OTP. Try again.');
     } finally {
       setLoading(false);
     }
